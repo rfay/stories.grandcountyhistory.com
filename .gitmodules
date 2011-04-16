@@ -19,3 +19,9 @@
 [submodule "sites/all/modules/dbtng_migrator"]
 	path = sites/all/modules/dbtng_migrator
 	url = git://git.drupal.org/project/dbtng_migrator.git
+[submodule "sites/all/modules/devel"]
+	path = sites/all/modules/devel
+	url = git://git.drupal.org/project/devel.git
+[submodule "sites/all/modules/views_bulk_operations"]
+	path = sites/all/modules/views_bulk_operations
+	url = git://git.drupal.org/project/views_bulk_operations.git
