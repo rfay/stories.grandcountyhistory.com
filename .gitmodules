@@ -1,0 +1,18 @@
+[submodule "sites/all/modules/admin_menu"]
+	path = sites/all/modules/admin_menu
+	url = git://git.drupal.org/project/admin_menu.git
+[submodule "sites/all/modules/module_filter"]
+	path = sites/all/modules/module_filter
+	url = git://git.drupal.org/project/module_filter.git
+[submodule "sites/all/modules/ctools"]
+	path = sites/all/modules/ctools
+	url = git://git.drupal.org/project/ctools.git
+[submodule "sites/all/modules/views"]
+	path = sites/all/modules/views
+	url = git://git.drupal.org/project/views.git
+[submodule "sites/all/modules/taxonomy_menu"]
+	path = sites/all/modules/taxonomy_menu
+	url = git://git.drupal.org/project/taxonomy_menu.git
+[submodule "sites/all/modules/nice_menus"]
+	path = sites/all/modules/nice_menus
+	url = git://git.drupal.org/project/nice_menus.git
