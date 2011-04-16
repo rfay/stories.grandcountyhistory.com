@@ -1,0 +1,6 @@
+name = Garland-GCHist
+base theme = garland
+description = Garland for GCHist
+core = 7.x
+stylesheets[all][] = style.css
+settings[garland_width] = fluid
