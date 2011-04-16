@@ -16,3 +16,6 @@
 [submodule "sites/all/modules/nice_menus"]
 	path = sites/all/modules/nice_menus
 	url = git://git.drupal.org/project/nice_menus.git
+[submodule "sites/all/modules/dbtng_migrator"]
+	path = sites/all/modules/dbtng_migrator
+	url = git://git.drupal.org/project/dbtng_migrator.git
