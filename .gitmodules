@@ -25,3 +25,36 @@
 [submodule "sites/all/modules/views_bulk_operations"]
 	path = sites/all/modules/views_bulk_operations
 	url = git://git.drupal.org/project/views_bulk_operations.git
+[submodule "sites/all/themes/corolla"]
+	path = sites/all/themes/corolla
+	url = git://git.drupal.org/project/corolla.git
+[submodule "sites/all/themes/danland"]
+	path = sites/all/themes/danland
+	url = git://git.drupal.org/project/danland.git
+[submodule "sites/all/themes/bluemasters"]
+	path = sites/all/themes/bluemasters
+	url = git://git.drupal.org/project/bluemasters.git
+[submodule "sites/all/modules/sweaver"]
+	path = sites/all/modules/sweaver
+	url = git://git.drupal.org/project/sweaver.git
+[submodule "sites/all/modules/views_slideshow"]
+	path = sites/all/modules/views_slideshow
+	url = git://git.drupal.org/project/views_slideshow.git
+[submodule "sites/all/themes/omega"]
+	path = sites/all/themes/omega
+	url = git://git.drupal.org/project/omega.git
+[submodule "sites/all/modules/libraries"]
+	path = sites/all/modules/libraries
+	url = git://git.drupal.org/project/libraries.git
+[submodule "sites/all/modules/wysiwyg"]
+	path = sites/all/modules/wysiwyg
+	url = git://git.drupal.org/project/wysiwyg.git
+[submodule "sites/all/modules/auto_nodetitle"]
+	path = sites/all/modules/auto_nodetitle
+	url = git://git.drupal.org/project/auto_nodetitle.git
+[submodule "sites/all/modules/token"]
+	path = sites/all/modules/token
+	url = git://git.drupal.org/project/token.git
+[submodule "sites/all/modules/references"]
+	path = sites/all/modules/references
+	url = git://git.drupal.org/project/references.git
