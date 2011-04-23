@@ -1,0 +1,5 @@
+/* Custom styles for Internet Exploder 7 */
+#region-menu ul.main-menu li {
+  float:right;
+  display: inline !important;
+} /* this is to make inline-block work on block elements versions <IE8 */
