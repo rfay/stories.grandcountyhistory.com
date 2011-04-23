@@ -85,3 +85,6 @@
 [submodule "sites/all/modules/imagecache_actions"]
 	path = sites/all/modules/imagecache_actions
 	url = git://git.drupal.org/project/imagecache_actions.git
+[submodule "sites/all/modules/css_injector"]
+	path = sites/all/modules/css_injector
+	url = git://git.drupal.org/project/css_injector.git
