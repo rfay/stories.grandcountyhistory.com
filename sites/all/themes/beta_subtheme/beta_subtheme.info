@@ -14,9 +14,9 @@ core       = 7.x
 base theme = beta
 
 ; ------- Declare default stylesheets
-;stylesheets[all][] = css/beta.css
-;stylesheets[all][] = css/colors.css
-stylesheets[all][] = subtheme_extras.css
+stylesheets[all][] = css/beta.css
+stylesheets[all][] = css/colors.css
+stylesheets[all][] = css/subtheme_extras.css
 
 ; ------- Declare default JavaScript includes
 ;scripts[] = js/beta.js

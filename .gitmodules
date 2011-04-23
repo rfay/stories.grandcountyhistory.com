@@ -79,3 +79,9 @@
 [submodule "sites/all/modules/pathauto"]
 	path = sites/all/modules/pathauto
 	url = git://git.drupal.org/project/pathauto.git
+[submodule "sites/all/modules/fontyourface"]
+	path = sites/all/modules/fontyourface
+	url = git://git.drupal.org/project/fontyourface.git
+[submodule "sites/all/modules/imagecache_actions"]
+	path = sites/all/modules/imagecache_actions
+	url = git://git.drupal.org/project/imagecache_actions.git
