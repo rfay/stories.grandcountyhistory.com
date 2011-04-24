@@ -16,9 +16,6 @@
 [submodule "sites/all/modules/nice_menus"]
 	path = sites/all/modules/nice_menus
 	url = git://git.drupal.org/project/nice_menus.git
-[submodule "sites/all/modules/dbtng_migrator"]
-	path = sites/all/modules/dbtng_migrator
-	url = git://git.drupal.org/project/dbtng_migrator.git
 [submodule "sites/all/modules/devel"]
 	path = sites/all/modules/devel
 	url = git://git.drupal.org/project/devel.git
@@ -76,9 +73,9 @@
 [submodule "sites/all/themes/beta"]
 	path = sites/all/themes/beta
 	url = git://git.drupal.org/project/beta.git
-[submodule "sites/all/modules/context"]
-	path = sites/all/modules/context
-	url = git://git.drupal.org/project/context.git
 [submodule "sites/all/modules/nodequeue"]
 	path = sites/all/modules/nodequeue
 	url = git://git.drupal.org/project/nodequeue.git
+[submodule "sites/all/modules/pathauto"]
+	path = sites/all/modules/pathauto
+	url = git://git.drupal.org/project/pathauto.git
