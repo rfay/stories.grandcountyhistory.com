@@ -1,0 +1,18 @@
+
+.views-field-nothing, .colorbox-hide { display: none; }
+
+.slideshow-image {
+  border: 2px solid black;
+  padding 2px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.field-name-field-image,
+.nodepopup-image { 
+  float: right !important; 
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+  padding: 2px;
+}

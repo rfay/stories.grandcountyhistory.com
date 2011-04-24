@@ -58,3 +58,27 @@
 [submodule "sites/all/modules/references"]
 	path = sites/all/modules/references
 	url = git://git.drupal.org/project/references.git
+[submodule "sites/all/modules/advanced_help"]
+	path = sites/all/modules/advanced_help
+	url = git://git.drupal.org/project/advanced_help.git
+[submodule "sites/all/modules/backup_migrate"]
+	path = sites/all/modules/backup_migrate
+	url = git://git.drupal.org/project/backup_migrate.git
+[submodule "sites/all/modules/colorbox"]
+	path = sites/all/modules/colorbox
+	url = git://git.drupal.org/project/colorbox.git
+[submodule "sites/all/modules/menu_block"]
+	path = sites/all/modules/menu_block
+	url = git://git.drupal.org/project/menu_block.git
+[submodule "sites/all/modules/dhtml_menu"]
+	path = sites/all/modules/dhtml_menu
+	url = git://git.drupal.org/project/dhtml_menu.git
+[submodule "sites/all/themes/beta"]
+	path = sites/all/themes/beta
+	url = git://git.drupal.org/project/beta.git
+[submodule "sites/all/modules/context"]
+	path = sites/all/modules/context
+	url = git://git.drupal.org/project/context.git
+[submodule "sites/all/modules/nodequeue"]
+	path = sites/all/modules/nodequeue
+	url = git://git.drupal.org/project/nodequeue.git
