@@ -1,4 +1,3 @@
-// $Id: collapse.js,v 1.32 2010/05/14 16:45:56 dries Exp $
 (function ($) {
 
 /**
@@ -59,7 +58,7 @@ Drupal.behaviors.collapse = {
     $('fieldset.collapsible', context).once('collapse', function () {
       var $fieldset = $(this);
       // Expand fieldset if there are errors inside, or if it contains an
-      // element that is targeted by the uri fragment identifier. 
+      // element that is targeted by the URI fragment identifier. 
       var anchor = location.hash && location.hash != '#' ? ', ' + location.hash : '';
       if ($('.error' + anchor, $fieldset).length) {
         $fieldset.removeClass('collapsed');
