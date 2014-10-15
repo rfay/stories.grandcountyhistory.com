@@ -22,7 +22,7 @@
 #location-outer-wrapper,
 #content-outer-wrapper,
 #status-outer-wrapper {
-  width: 1000px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -45,11 +45,18 @@
 #content-container {
   padding-top: 10px;
 }
-
+.container-12 .region,
+.container-16 .region
+ {
+  margin: 0 10px;
+}
+.container-24 .region {
+  margin: 0 5px;
+}
 /* Restyle Branding zone */
 h1.site-title a, h2.site-title a {
   color: #EEE;
-  font-size: 1.5em;
+  font-size: 1.0em;
   line-height: 1.3em;
   font-weight: normal;
   text-shadow: 1px 1px 2px #1a1a1a;
@@ -59,6 +66,7 @@ h1.site-title a:hover, h2.site-title a:hover {
   color: #6a6a6a;
 }
 .site-slogan {
+  display: none;
   position: relative;
   top: -10px;
   color: #6a6a6a;
@@ -209,6 +217,9 @@ input[type="submit"]:hover,
 input[type="button"]:hover {
   background: #FFF;
 }
+input[type="text"] {
+  text-transform: none;
+}
 ul.links li a,
 #user-container .block-user .item-list a {
   text-transform: lowercase;
@@ -313,6 +324,9 @@ ul.inline li {
   font-weight: normal;
   text-shadow: 1px 1px 2px #1a1a1a;
   filter: dropshadow(color=#1a1a1a, offx=1, offy=1); 
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
 }
 #region-menu ul.main-menu li a:hover,
 #region-menu ul.secondary-menu li a:hover,
@@ -335,7 +349,6 @@ ul.inline li {
 #region-menu ul.secondary-menu li.active a {
   background-color: transparent;
   text-decoration: none;
-  padding-right: 0;
 }
 
 /* Pager redesign */
@@ -530,4 +543,23 @@ blockquote {
 .comment .user-picture img {
   height: 50px;
   width: 50px;
+}
+
+.logo-img {
+  display: none;
+}
+
+
+
+
+
+
+#user-container #block-user-login .content {
+  visibility: hidden;
+}
+
+@media all and (min-width: 740px) and (min-device-width: 740px) {
+  .logo-img {
+    display: block;
+  }
 }

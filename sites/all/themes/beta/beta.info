@@ -101,6 +101,16 @@ zones[footer][] = footer_second
 ; END CONTENT ZONES
 
 settings[omega_default_container_width] = '12'
+settings[omega_responsive_grid] = 'enabled'
+settings[omega_responsive_mobile] = '1'
+settings[omega_responsive_medium] = '1'
+settings[omega_responsive_default] = '1'
+settings[omega_responsive_large] = ''
+settings[omega_customize_viewport] = 'on'
+settings[omega_viewport_initial_scale] = '1.0'
+settings[omega_viewport_min_scale] = '1.0'
+settings[omega_viewport_max_scale] = '1.0'
+settings[omega_viewport_user_scale] = ''
 settings[omega_fixed_fluid] = 'fixed'
 settings[omega_user_enabled] = '1'
 settings[omega_user_wrapper] = '1'
@@ -109,12 +119,12 @@ settings[omega_user_zone_type] = 'static'
 settings[omega_user_dynamic_zone_primary_region] = 'user_bar_first'
 settings[omega_user_zone_extra_classes] = 'user-zone'
 settings[omega_user_user_bar_first_region_prefix] = ''
-settings[omega_user_user_bar_first_region_width] = '9'
+settings[omega_user_user_bar_first_region_width] = '8'
 settings[omega_user_user_bar_first_region_suffix] = ''
 settings[omega_user_user_bar_first_region_order] = '1'
 settings[omega_user_user_bar_first_region_extra_classes] = 'user-first-region'
 settings[omega_user_user_bar_second_region_prefix] = ''
-settings[omega_user_user_bar_second_region_width] = '3'
+settings[omega_user_user_bar_second_region_width] = '4'
 settings[omega_user_user_bar_second_region_suffix] = ''
 settings[omega_user_user_bar_second_region_order] = '2'
 settings[omega_user_user_bar_second_region_extra_classes] = 'user-second-region'
@@ -284,9 +294,9 @@ settings[debug_grid_toggle_state] = ''
 settings[debug_grid_roles][3] = '3'
 settings[debug_grid_roles][2] = '0'
 settings[omega_general__active_tab] = 'edit-grid-overlay'
-; Information added by drupal.org packaging script on 2011-03-02
-version = "7.x-2.0-beta1"
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-2.0-beta1+7-dev"
 core = "7.x"
 project = "beta"
-datestamp = "1299086167"
+datestamp = "1380555890"
 
