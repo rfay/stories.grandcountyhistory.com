@@ -1,5 +1,5 @@
 /**
- * Colorbox Core Style:
+ * ColorBox Core Style:
  * The following CSS is consistent between example themes and should not be altered.
  */
 #colorbox, #cboxOverlay, #cboxWrapper {
@@ -22,7 +22,6 @@
 }
 #cboxLoadedContent {
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 #cboxTitle {
   margin: 0;
@@ -34,32 +33,14 @@
   width: 100%;
   height: 100%;
 }
-/**
- * These elements are buttons, and may need to have additional
- * styles reset to avoid unwanted base styles.
- */
 #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  overflow: visible;
-  width: auto;
-  background: none;
   cursor: pointer;
-}
-/**
- * Avoid outlines on :active (mouseclick),
- * but preserve outlines on :focus (tabbed navigating)
- */
-#cboxPrevious:active, #cboxNext:active, #cboxClose:active, #cboxSlideshow:active {
-  outline: 0;
 }
 .cboxPhoto {
   float: left;
   margin: auto;
   border: 0;
   display: block;
-  max-width: none;
 }
 .cboxIframe {
   width: 100%;
@@ -67,10 +48,8 @@
   display: block;
   border: 0;
 }
-/* Reset box sizing to content-box if theme is using border-box. */
 #colorbox, #cboxContent, #cboxLoadedContent {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -81,6 +60,7 @@
  */
 #cboxOverlay {
   background: #000;
+  opacity: 0.4 !important;
 }
 
 #colorbox {
@@ -94,7 +74,6 @@
   -webkit-border-bottom-right-radius: 9px;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
-  outline: 0;
 }
 #colorbox, #colorbox div {
   overflow: visible; /* Required by the close button. */
@@ -138,6 +117,7 @@
     #cboxContent {
       background: #fff;
       overflow: hidden;
+      font: 11px Arial, sans-serif;
       margin-bottom: 28px;
     }
       #cboxError {
@@ -151,9 +131,8 @@
         height: 38px;
         color: #313131;
         padding: 0 140px 0 15px;
-        display: table-cell !important;
+        display: table-cell;
         vertical-align: middle;
-        float: none !important;
       }
       #cboxCurrent {
         position: absolute;
@@ -178,7 +157,7 @@
         position: absolute;
         bottom: -26px;
         right: 45px;
-        background: url(images/controls.png) no-repeat 0 -48px;
+        background: url(images/controls.png) 0 -48px no-repeat;
         width: 21px;
         height: 15px;
         text-indent: -9999px;
@@ -190,7 +169,7 @@
         position: absolute;
         bottom: -26px;
         right: 15px;
-        background: url(images/controls.png) no-repeat 0 -29px;
+        background: url(images/controls.png) 0 -29px no-repeat;
         width: 21px;
         height: 15px;
         text-indent: -9999px;
@@ -202,13 +181,13 @@
         background: #e6e6e6;
       }
       #cboxLoadingGraphic {
-        background: url(images/loading_animation.gif) no-repeat center center;
+        background: url(images/loading_animation.gif) center center no-repeat;
       }
       #cboxClose {
         position: absolute;
         top: -10px;
         right: -10px;
-        background: url(images/controls.png) no-repeat 0px 0px;
+        background: url(images/controls.png) 0px 0px no-repeat;
         width: 25px;
         height: 25px;
         text-indent: -9999px;
@@ -217,3 +196,8 @@
       #cboxClose:hover {
         background-position: 0 -63px;
       }
+
+/* The following are fixes for IE. */
+.cboxIE6 #cboxTitle {
+  background: #fff;
+}
