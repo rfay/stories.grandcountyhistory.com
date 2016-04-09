@@ -1,9 +1,0 @@
-[submodule "sites/all/themes/corolla"]
-	path = sites/all/themes/corolla
-	url = git://git.drupal.org/project/corolla.git
-[submodule "sites/all/themes/danland"]
-	path = sites/all/themes/danland
-	url = git://git.drupal.org/project/danland.git
-[submodule "sites/all/themes/bluemasters"]
-	path = sites/all/themes/bluemasters
-	url = git://git.drupal.org/project/bluemasters.git
