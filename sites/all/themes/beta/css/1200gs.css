@@ -1,0 +1,21 @@
+@media all and (min-width: 1220px) and (min-device-width: 1220px) {
+  h1.site-title a, h2.site-title a {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
+  .site-slogan {
+    display: block;
+  }
+  #content-container {
+    padding: 10px 0 0 0;
+  }
+  #menu-outer-wrapper,
+  #header-outer-wrapper,
+  #preface-outer-wrapper,
+  #location-outer-wrapper,
+  #content-outer-wrapper,
+  #status-outer-wrapper {
+    width: 1240px;
+    margin: 0 auto;
+  }
+}
