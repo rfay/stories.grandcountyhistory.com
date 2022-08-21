@@ -8,7 +8,7 @@
 /**
  * The current system version.
  */
-define('VERSION', '7.84');
+define('VERSION', '7.91');
 
 /**
  * Core API compatibility.
@@ -812,12 +812,12 @@ function drupal_settings_initialize() {
 
     // Drupal 7.83 included a security improvement whereby www. is no longer
     // stripped from the cookie domain. However, this can cause problems with
-    // existing session cookies whereby some users are left unable to login. In
-    // order to avoid that, use the cookie domain (including leading dot) as the
-    // session name when a www. subdomain is in use.
+    // existing session cookies where some users are left unable to login. In
+    // order to avoid that, prepend a leading dot to the session_name that was
+    // derived from the base_url when a www. subdomain is in use.
     // @see https://www.drupal.org/project/drupal/issues/2522002
     if (strpos($session_name, 'www.') === 0) {
-      $session_name = $cookie_domain;
+      $session_name = '.' . $session_name;
     }
   }
   // Per RFC 2109, cookie domains must contain at least one dot other than the
@@ -1602,7 +1602,7 @@ function drupal_page_header() {
  */
 function drupal_serve_page_from_cache(stdClass $cache) {
   // Negotiate whether to use compression.
-  $page_compression = !empty($cache->data['page_compressed']);
+  $page_compression = !empty($cache->data['page_compressed']) && !empty($cache->data['body']);
   $return_compressed = $page_compression && isset($_SERVER['HTTP_ACCEPT_ENCODING']) && strpos($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip') !== FALSE;
 
   // Get headers set in hook_boot(). Keys are lower-case.
@@ -1905,7 +1905,7 @@ function format_string($string, array $args = array()) {
  * @ingroup sanitization
  */
 function check_plain($text) {
-  return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
+  return htmlspecialchars((string) $text, ENT_QUOTES, 'UTF-8');
 }
 
 /**
@@ -1933,7 +1933,7 @@ function check_plain($text) {
  *   TRUE if the text is valid UTF-8, FALSE if not.
  */
 function drupal_validate_utf8($text) {
-  if (strlen($text) == 0) {
+  if (strlen((string) $text) == 0) {
     return TRUE;
   }
   // With the PCRE_UTF8 modifier 'u', preg_match() fails silently on strings
